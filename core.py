@@ -1,3 +1,7 @@
+# This code is copied from https://platform.openai.com/docs/guides/function-calling
+# I plan to edit it, but thanks to the OpenAI team for the great example
+
+
 from openai import OpenAI
 from dotenv import load_dotenv
 import json
