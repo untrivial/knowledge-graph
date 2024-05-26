@@ -60,7 +60,14 @@ def run_conversation():
         available_functions = {
             "get_current_weather": get_current_weather,
         }  # only one function in this example, but you can have multiple
+        print(messages)
         messages.append(response_message)  # extend conversation with assistant's reply
+
+        print("Aaaaa")
+        print(response_message)
+        print("Bbbbb")
+        print(messages)
+        print("Ccccc")
         # Step 4: send the info for each function call and function response to the model
         for tool_call in tool_calls:
             function_name = tool_call.function.name
